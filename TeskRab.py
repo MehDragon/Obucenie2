@@ -1,12 +1,5 @@
-char = str(input('Введите символ: '))
+month_number = input('Введите номер месяца: ')
 
-for i in range (1,6):
-   print(char*i)
+d = {"1":"Январь", "2":"Февраль", "3":"Март", "4":"Апрель", "5":"Май", "6":"Июнь", "7":"Июль", "8":"Август", "9":"Сентябрь", "10":"Октрябрь", "11":"Ноябрь", "12":"Декабрь"}
 
-char = str(input('Введите символ: '))
-
-print (char)
-print (char+char)
-print (char+char+char)
-print (char+char+char+char)
-print (char+char+char+char+char)
+print (d.get(month_number))
