@@ -1,5 +1,9 @@
-month_number = input('Введите номер месяца: ')
+nums = input("Введите числа через пробел: ")
 
-d = {"1":"Январь", "2":"Февраль", "3":"Март", "4":"Апрель", "5":"Май", "6":"Июнь", "7":"Июль", "8":"Август", "9":"Сентябрь", "10":"Октрябрь", "11":"Ноябрь", "12":"Декабрь"}
+numbers = list(map(int, nums.split()))
+even_numbers = []
+for number in numbers:
+    if number % 2 == 0:
+        even_numbers.append(number)
 
-print (d.get(month_number,"Такого месяца не существует"))
+print("Список чётных чисел:", even_numbers)
